@@ -1,0 +1,9 @@
+/* 
+ Localizable.strings
+  VibraMED
+
+  Created by Elsys Corp. on 11.12.2020.
+  
+*/
+
+"VI_INFO_SITE_URL_BASE"="https://online.psymaker.com/MO/";

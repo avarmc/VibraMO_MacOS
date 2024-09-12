@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Camera View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" userLabel="Camera View Controller" customClass="CameraViewController" customModule="VibraMED" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3eR-Rn-XpZ" userLabel="Preview" customClass="PreviewView" customModule="VibraMED" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                                <subviews>
+                                    <view opaque="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="w4r-L5-mPZ" customClass="VIEngineView" customModule="VibraMED" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="734"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rUJ-G6-RPv" userLabel="CameraButton">
+                                                <rect key="frame" x="157.66666666666666" y="669" width="60" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="aaw-K8-laE"/>
+                                                    <constraint firstAttribute="width" constant="60" id="rud-by-4Qr"/>
+                                                </constraints>
+                                                <state key="normal" image="FlipCamera"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="changeCamera:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3W0-h3-6fc"/>
+                                                </connections>
+                                            </button>
+                                            <button clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="q1L-0T-g0B" userLabel="MeasureButton">
+                                                <rect key="frame" x="92.666666666666671" y="669" width="60.000000000000014" height="60"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="Amw-d1-CcK"/>
+                                                    <constraint firstAttribute="width" constant="60" id="M0P-ho-p6k"/>
+                                                </constraints>
+                                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" image="Measure" backgroundImage="Measure"/>
+                                                <connections>
+                                                    <action selector="measure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vtm-s8-m2D"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xGW-ET-33D" userLabel="PresetButton">
+                                                <rect key="frame" x="222.66666666666666" y="669" width="59.999999999999972" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="IH4-VY-RXB"/>
+                                                    <constraint firstAttribute="width" constant="60" id="eIu-wI-aPK"/>
+                                                </constraints>
+                                                <state key="normal" image="AR"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="preset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RTW-ud-49n"/>
+                                                </connections>
+                                            </button>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lke-ti-n1z" userLabel="measureProgress" customClass="GradientCircularProgressBar" customModule="VibraMED" customModuleProvider="target">
+                                                <rect key="frame" x="5" y="5" width="120" height="120"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="120" id="a0G-SI-Ubz"/>
+                                                    <constraint firstAttribute="height" constant="120" id="bYc-gY-xTi"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tOe-E2-R4L" userLabel="qualityProgress" customClass="GradientCircularProgressBar" customModule="VibraMED" customModuleProvider="target">
+                                                <rect key="frame" x="15" y="15" width="100" height="100"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="gN8-hE-F4d"/>
+                                                    <constraint firstAttribute="width" constant="100" id="zpP-rh-czv"/>
+                                                </constraints>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fE8-pw-pcL" userLabel="qualityType">
+                                                <rect key="frame" x="25" y="25" width="80" height="80"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="Jpf-KG-3JV"/>
+                                                    <constraint firstAttribute="height" constant="80" id="pHe-x4-Gs3"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="64"/>
+                                                <color key="textColor" systemColor="systemRedColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oL6-9t-jvf" userLabel="dgbText">
+                                                <rect key="frame" x="250" y="5" width="120" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="120" id="Ase-UN-eVW"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" systemColor="systemOrangeColor"/>
+                                                <color key="highlightedColor" systemColor="systemOrangeColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="xGW-ET-33D" firstAttribute="leading" secondItem="rUJ-G6-RPv" secondAttribute="trailing" constant="5" id="27r-7I-bli"/>
+                                            <constraint firstItem="q1L-0T-g0B" firstAttribute="width" secondItem="rUJ-G6-RPv" secondAttribute="width" id="2t2-9k-O3c"/>
+                                            <constraint firstItem="tOe-E2-R4L" firstAttribute="centerY" secondItem="Lke-ti-n1z" secondAttribute="centerY" id="949-2c-Gdv"/>
+                                            <constraint firstItem="fE8-pw-pcL" firstAttribute="centerY" secondItem="tOe-E2-R4L" secondAttribute="centerY" id="9UG-CB-gSZ"/>
+                                            <constraint firstItem="rUJ-G6-RPv" firstAttribute="bottom" secondItem="w4r-L5-mPZ" secondAttribute="bottom" constant="-5" id="C8n-M0-1mX"/>
+                                            <constraint firstItem="q1L-0T-g0B" firstAttribute="bottom" secondItem="rUJ-G6-RPv" secondAttribute="bottom" id="Ep9-PJ-1Pm"/>
+                                            <constraint firstItem="q1L-0T-g0B" firstAttribute="trailing" secondItem="rUJ-G6-RPv" secondAttribute="leading" constant="-5" id="FUC-vB-x4W"/>
+                                            <constraint firstItem="tOe-E2-R4L" firstAttribute="centerX" secondItem="Lke-ti-n1z" secondAttribute="centerX" id="HGc-pq-TqD"/>
+                                            <constraint firstItem="Lke-ti-n1z" firstAttribute="top" secondItem="w4r-L5-mPZ" secondAttribute="top" constant="5" id="HWW-ea-HvE"/>
+                                            <constraint firstItem="q1L-0T-g0B" firstAttribute="trailing" secondItem="rUJ-G6-RPv" secondAttribute="trailing" id="Nq6-b8-jU5"/>
+                                            <constraint firstItem="fE8-pw-pcL" firstAttribute="centerX" secondItem="tOe-E2-R4L" secondAttribute="centerX" id="QDz-xq-aYf"/>
+                                            <constraint firstItem="xGW-ET-33D" firstAttribute="top" secondItem="rUJ-G6-RPv" secondAttribute="bottom" constant="5" id="TUD-Jo-wxV"/>
+                                            <constraint firstItem="rUJ-G6-RPv" firstAttribute="trailing" secondItem="w4r-L5-mPZ" secondAttribute="trailing" constant="5" id="WMG-Tj-fGo"/>
+                                            <constraint firstItem="rUJ-G6-RPv" firstAttribute="centerX" secondItem="w4r-L5-mPZ" secondAttribute="centerX" id="WpM-yA-OME"/>
+                                            <constraint firstItem="oL6-9t-jvf" firstAttribute="top" secondItem="w4r-L5-mPZ" secondAttribute="top" constant="5" id="a0N-WP-zlR"/>
+                                            <constraint firstItem="oL6-9t-jvf" firstAttribute="trailing" secondItem="w4r-L5-mPZ" secondAttribute="trailing" constant="-5" id="azQ-Ui-pvN"/>
+                                            <constraint firstItem="q1L-0T-g0B" firstAttribute="height" secondItem="rUJ-G6-RPv" secondAttribute="height" id="cYW-Og-MYb"/>
+                                            <constraint firstItem="q1L-0T-g0B" firstAttribute="bottom" secondItem="rUJ-G6-RPv" secondAttribute="top" constant="-5" id="d29-A3-58o"/>
+                                            <constraint firstItem="rUJ-G6-RPv" firstAttribute="centerY" secondItem="w4r-L5-mPZ" secondAttribute="centerY" id="e5O-ZX-lBm"/>
+                                            <constraint firstItem="xGW-ET-33D" firstAttribute="bottom" secondItem="rUJ-G6-RPv" secondAttribute="bottom" id="ksD-wb-llN"/>
+                                            <constraint firstItem="xGW-ET-33D" firstAttribute="trailing" secondItem="rUJ-G6-RPv" secondAttribute="trailing" id="wIB-Xo-ET5"/>
+                                            <constraint firstItem="Lke-ti-n1z" firstAttribute="leading" secondItem="w4r-L5-mPZ" secondAttribute="leading" constant="5" id="y0y-zh-q4o"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="Ep9-PJ-1Pm"/>
+                                                <exclude reference="FUC-vB-x4W"/>
+                                                <exclude reference="Nq6-b8-jU5"/>
+                                                <exclude reference="d29-A3-58o"/>
+                                                <exclude reference="C8n-M0-1mX"/>
+                                                <exclude reference="WMG-Tj-fGo"/>
+                                                <exclude reference="WpM-yA-OME"/>
+                                                <exclude reference="e5O-ZX-lBm"/>
+                                                <exclude reference="27r-7I-bli"/>
+                                                <exclude reference="TUD-Jo-wxV"/>
+                                                <exclude reference="ksD-wb-llN"/>
+                                                <exclude reference="wIB-Xo-ET5"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="Nq6-b8-jU5"/>
+                                                <include reference="d29-A3-58o"/>
+                                                <include reference="WMG-Tj-fGo"/>
+                                                <include reference="e5O-ZX-lBm"/>
+                                                <include reference="TUD-Jo-wxV"/>
+                                                <include reference="wIB-Xo-ET5"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="Ep9-PJ-1Pm"/>
+                                                <include reference="FUC-vB-x4W"/>
+                                                <include reference="C8n-M0-1mX"/>
+                                                <include reference="WpM-yA-OME"/>
+                                                <include reference="27r-7I-bli"/>
+                                                <include reference="ksD-wb-llN"/>
+                                            </mask>
+                                        </variation>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstItem="w4r-L5-mPZ" firstAttribute="width" secondItem="3eR-Rn-XpZ" secondAttribute="width" id="0dg-mI-KXG"/>
+                                    <constraint firstItem="w4r-L5-mPZ" firstAttribute="centerY" secondItem="3eR-Rn-XpZ" secondAttribute="centerY" id="2EA-1Q-k2o"/>
+                                    <constraint firstItem="w4r-L5-mPZ" firstAttribute="height" secondItem="3eR-Rn-XpZ" secondAttribute="height" id="Uv9-je-YJ5"/>
+                                    <constraint firstItem="w4r-L5-mPZ" firstAttribute="centerX" secondItem="3eR-Rn-XpZ" secondAttribute="centerX" id="mFU-vp-ead"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="fY6-qX-ntV" appends="YES" id="G6D-dx-xU8"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="nyU-fN-aJh"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="3eR-Rn-XpZ" firstAttribute="width" secondItem="nyU-fN-aJh" secondAttribute="width" id="H4c-ON-JV7"/>
+                            <constraint firstItem="3eR-Rn-XpZ" firstAttribute="centerX" secondItem="nyU-fN-aJh" secondAttribute="centerX" id="M2f-Ms-5Gh"/>
+                            <constraint firstItem="3eR-Rn-XpZ" firstAttribute="centerY" secondItem="nyU-fN-aJh" secondAttribute="centerY" id="Q1D-Ge-Psh"/>
+                            <constraint firstItem="3eR-Rn-XpZ" firstAttribute="height" secondItem="nyU-fN-aJh" secondAttribute="height" id="fmz-pd-jDW"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="cameraButton" destination="rUJ-G6-RPv" id="dAV-WS-N1p"/>
+                        <outlet property="dbgText" destination="oL6-9t-jvf" id="0gl-wX-L6u"/>
+                        <outlet property="engineView" destination="w4r-L5-mPZ" id="6IL-Df-Mt3"/>
+                        <outlet property="measureButton" destination="q1L-0T-g0B" id="Kun-En-ftK"/>
+                        <outlet property="measureProgress" destination="Lke-ti-n1z" id="jWA-0O-1zR"/>
+                        <outlet property="presetButton" destination="xGW-ET-33D" id="p82-UP-ywV"/>
+                        <outlet property="previewView" destination="3eR-Rn-XpZ" id="e7I-nu-L6j"/>
+                        <outlet property="qualityProgress" destination="tOe-E2-R4L" id="0Rl-j5-C8k"/>
+                        <outlet property="qualityType" destination="fE8-pw-pcL" id="Jf5-wI-Dae"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="fY6-qX-ntV">
+                    <connections>
+                        <action selector="focusAndExposeTap:" destination="BYZ-38-t0r" id="65g-8k-5pv"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-656.1576354679803" y="-631.20000000000005"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+    <resources>
+        <image name="AR" width="48" height="48"/>
+        <image name="FlipCamera" width="150" height="150"/>
+        <image name="Measure" width="48" height="48"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,426 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 63;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A27B73CD25821089008CBDBB /* PopupPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27B73CC25821089008CBDBB /* PopupPresentationController.swift */; };
+		A27B73D025821184008CBDBB /* PopupPanelTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27B73CF25821184008CBDBB /* PopupPanelTransition.swift */; };
+		A27C95CA257E12DA007F057B /* VIEngineProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27C95C9257E12DA007F057B /* VIEngineProcessor.swift */; };
+		A27C95F6257E272D007F057B /* libVIEngineLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A27C95F5257E272D007F057B /* libVIEngineLib.a */; };
+		A27C95FB257E2DDB007F057B /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A27C95FA257E2DDB007F057B /* libc++.tbd */; };
+		A27C9640257E46D4007F057B /* VIEngineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27C963F257E46D4007F057B /* VIEngineView.swift */; };
+		A28301C32583589A00217946 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A28301C22583589A00217946 /* Localizable.strings */; };
+		A287357826034E5100AA146E /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A287357726034E5100AA146E /* WebViewController.swift */; };
+		A287357B26034F4400AA146E /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A287357A26034F4400AA146E /* PreviewView.swift */; };
+		A28735802603716E00AA146E /* HttpHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A287357F2603716E00AA146E /* HttpHelper.swift */; };
+		A290C4EE257FB12C00811E8F /* FaceDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = A290C4ED257FB12C00811E8F /* FaceDetector.swift */; };
+		A2AA111E257A4AEB001904C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AA111D257A4AEB001904C0 /* AppDelegate.swift */; };
+		A2AA1125257A4AEB001904C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2AA1123257A4AEB001904C0 /* Main.storyboard */; };
+		A2AA1127257A4AEC001904C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2AA1126257A4AEC001904C0 /* Assets.xcassets */; };
+		A2AA112A257A4AEC001904C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2AA1128257A4AEC001904C0 /* LaunchScreen.storyboard */; };
+		A2AA1152257A4BD1001904C0 /* ItemSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AA114E257A4BD1001904C0 /* ItemSelectionViewController.swift */; };
+		A2AA1153257A4BD1001904C0 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AA114F257A4BD1001904C0 /* CameraViewController.swift */; };
+		A2EF69E72580B9CE008AEAD2 /* GradientCircularProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EF69E62580B9CE008AEAD2 /* GradientCircularProgressBar.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A27B73CC25821089008CBDBB /* PopupPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupPresentationController.swift; sourceTree = "<group>"; };
+		A27B73CF25821184008CBDBB /* PopupPanelTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupPanelTransition.swift; sourceTree = "<group>"; };
+		A27C95C9257E12DA007F057B /* VIEngineProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIEngineProcessor.swift; sourceTree = "<group>"; };
+		A27C95F5257E272D007F057B /* libVIEngineLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libVIEngineLib.a; sourceTree = "<group>"; };
+		A27C95FA257E2DDB007F057B /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		A27C963F257E46D4007F057B /* VIEngineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VIEngineView.swift; sourceTree = "<group>"; };
+		A28301C22583589A00217946 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		A287357726034E5100AA146E /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		A287357A26034F4400AA146E /* PreviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
+		A287357F2603716E00AA146E /* HttpHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpHelper.swift; sourceTree = "<group>"; };
+		A290C4ED257FB12C00811E8F /* FaceDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceDetector.swift; sourceTree = "<group>"; };
+		A2AA111A257A4AEB001904C0 /* VibraMED.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VibraMED.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2AA111D257A4AEB001904C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A2AA1124257A4AEB001904C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A2AA1126257A4AEC001904C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A2AA1129257A4AEC001904C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A2AA112B257A4AEC001904C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2AA114E257A4BD1001904C0 /* ItemSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemSelectionViewController.swift; sourceTree = "<group>"; };
+		A2AA114F257A4BD1001904C0 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		A2EF69E62580B9CE008AEAD2 /* GradientCircularProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientCircularProgressBar.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A2AA1117257A4AEB001904C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A27C95FB257E2DDB007F057B /* libc++.tbd in Frameworks */,
+				A27C95F6257E272D007F057B /* libVIEngineLib.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A27C95F2257E26AE007F057B /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				A27C95F5257E272D007F057B /* libVIEngineLib.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		A27C95F9257E2DDB007F057B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A27C95FA257E2DDB007F057B /* libc++.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A2AA1111257A4AEB001904C0 = {
+			isa = PBXGroup;
+			children = (
+				A2AA111C257A4AEB001904C0 /* VibraMED */,
+				A2AA111B257A4AEB001904C0 /* Products */,
+				A27C95F9257E2DDB007F057B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A2AA111B257A4AEB001904C0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A2AA111A257A4AEB001904C0 /* VibraMED.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A2AA111C257A4AEB001904C0 /* VibraMED */ = {
+			isa = PBXGroup;
+			children = (
+				A27C95F2257E26AE007F057B /* lib */,
+				A2AA111D257A4AEB001904C0 /* AppDelegate.swift */,
+				A27C963F257E46D4007F057B /* VIEngineView.swift */,
+				A2AA1123257A4AEB001904C0 /* Main.storyboard */,
+				A27B73CC25821089008CBDBB /* PopupPresentationController.swift */,
+				A27B73CF25821184008CBDBB /* PopupPanelTransition.swift */,
+				A2EF69E62580B9CE008AEAD2 /* GradientCircularProgressBar.swift */,
+				A2AA114F257A4BD1001904C0 /* CameraViewController.swift */,
+				A290C4ED257FB12C00811E8F /* FaceDetector.swift */,
+				A27C95C9257E12DA007F057B /* VIEngineProcessor.swift */,
+				A2AA114E257A4BD1001904C0 /* ItemSelectionViewController.swift */,
+				A2AA1126257A4AEC001904C0 /* Assets.xcassets */,
+				A2AA1128257A4AEC001904C0 /* LaunchScreen.storyboard */,
+				A2AA112B257A4AEC001904C0 /* Info.plist */,
+				A28301C22583589A00217946 /* Localizable.strings */,
+				A287357A26034F4400AA146E /* PreviewView.swift */,
+				A287357726034E5100AA146E /* WebViewController.swift */,
+				A287357F2603716E00AA146E /* HttpHelper.swift */,
+			);
+			path = VibraMED;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A2AA1119257A4AEB001904C0 /* VibraMED */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2AA112E257A4AEC001904C0 /* Build configuration list for PBXNativeTarget "VibraMED" */;
+			buildPhases = (
+				A2AA1116257A4AEB001904C0 /* Sources */,
+				A2AA1117257A4AEB001904C0 /* Frameworks */,
+				A2AA1118257A4AEB001904C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VibraMED;
+			productName = VibraMED;
+			productReference = A2AA111A257A4AEB001904C0 /* VibraMED.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A2AA1112257A4AEB001904C0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					A2AA1119257A4AEB001904C0 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = A2AA1115257A4AEB001904C0 /* Build configuration list for PBXProject "VibraMED" */;
+			compatibilityVersion = "Xcode 15.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A2AA1111257A4AEB001904C0;
+			productRefGroup = A2AA111B257A4AEB001904C0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A2AA1119257A4AEB001904C0 /* VibraMED */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A2AA1118257A4AEB001904C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A28301C32583589A00217946 /* Localizable.strings in Resources */,
+				A2AA112A257A4AEC001904C0 /* LaunchScreen.storyboard in Resources */,
+				A2AA1127257A4AEC001904C0 /* Assets.xcassets in Resources */,
+				A2AA1125257A4AEB001904C0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A2AA1116257A4AEB001904C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A290C4EE257FB12C00811E8F /* FaceDetector.swift in Sources */,
+				A287357826034E5100AA146E /* WebViewController.swift in Sources */,
+				A2AA111E257A4AEB001904C0 /* AppDelegate.swift in Sources */,
+				A27B73CD25821089008CBDBB /* PopupPresentationController.swift in Sources */,
+				A287357B26034F4400AA146E /* PreviewView.swift in Sources */,
+				A2EF69E72580B9CE008AEAD2 /* GradientCircularProgressBar.swift in Sources */,
+				A2AA1152257A4BD1001904C0 /* ItemSelectionViewController.swift in Sources */,
+				A27B73D025821184008CBDBB /* PopupPanelTransition.swift in Sources */,
+				A27C95CA257E12DA007F057B /* VIEngineProcessor.swift in Sources */,
+				A2AA1153257A4BD1001904C0 /* CameraViewController.swift in Sources */,
+				A28735802603716E00AA146E /* HttpHelper.swift in Sources */,
+				A27C9640257E46D4007F057B /* VIEngineView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A2AA1123257A4AEB001904C0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A2AA1124257A4AEB001904C0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A2AA1128257A4AEC001904C0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A2AA1129257A4AEC001904C0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A2AA112C257A4AEC001904C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A2AA112D257A4AEC001904C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A2AA112F257A4AEC001904C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LY72PX243R;
+				INFOPLIST_FILE = VibraMED/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/VibraMED",
+					"$(PROJECT_DIR)/VibraMED/lib",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "Elsys-Corp.VibraMED-dev";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "$(PROJECT_DIR)/VibraMED/lib";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A2AA1130257A4AEC001904C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LY72PX243R;
+				INFOPLIST_FILE = VibraMED/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/VibraMED",
+					"$(PROJECT_DIR)/VibraMED/lib",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "Elsys-Corp.VibraMED-dev";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "$(PROJECT_DIR)/VibraMED/lib";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A2AA1115257A4AEB001904C0 /* Build configuration list for PBXProject "VibraMED" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2AA112C257A4AEC001904C0 /* Debug */,
+				A2AA112D257A4AEC001904C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A2AA112E257A4AEC001904C0 /* Build configuration list for PBXNativeTarget "VibraMED" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2AA112F257A4AEC001904C0 /* Debug */,
+				A2AA1130257A4AEC001904C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A2AA1112257A4AEB001904C0 /* Project object */;
+}
